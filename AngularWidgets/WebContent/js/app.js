@@ -3,7 +3,7 @@ var app=angular.module("Widgets",["ngRoute"]);
 app.controller("homeController",["$scope", function($scope) {
 	$scope.title="Widgets";
 }]);
-//Flickr Controller
+//Flicker Controller
 app.controller("flickrController",["$scope",function($scope){
 	$scope.title="Flickr feed";
 }]);
