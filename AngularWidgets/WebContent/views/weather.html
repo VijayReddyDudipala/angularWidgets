@@ -1,0 +1,35 @@
+<h3 class="">Weather</h3>
+				
+				<div id="clearData2" class="well well-lg responsiveBox">
+				<div class="row">
+
+				<div class="input-group">
+					<input ng-model="cityID" type="text" class="form-control"
+						placeholder="Enter your city name here"> <span
+						class="input-group-btn">
+						<button id="getWeather" ng-click="getWeather()" class="btn btn-success" type="button">Go!</button>
+					</span>
+				</div>
+				</div>
+				
+					<div class="row" ng-hide="hide">
+						<h4 id="innerHeading">Temperature(C)</h4>
+					</div>
+
+
+					<div class="row" id="time2"></div>
+					<div class="row">
+						<h2 id="value2"></h2>
+					</div>
+
+					<div class="row" ng-hide="hide">
+						<div class="col-md-6 col-sm-6">
+							Min:{{minTemp | number:2}}
+							<div id="minTemp"></div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							Max:{{maxTemp | number:2}}
+							<div id="maxTemp"></div>
+						</div>
+					</div>
+				</div>

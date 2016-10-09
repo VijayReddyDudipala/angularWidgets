@@ -1,0 +1,29 @@
+<h3 class="">{{title}}</h3>
+
+<div  class="well well-lg responsiveBox">
+	<div class="row">
+
+		<div class="input-group">
+			<input  type="search" class="form-control" onkeydown="getFlickrPhotos()"
+				placeholder="Search by tag name here"> <span
+				class="input-group-btn">
+				<button  ng-click="getFlickrPhotos()"
+					class="btn btn-success" type="button">Go!</button>
+			</span>
+		</div>
+	</div>
+
+	<div class="row">
+		<h4 >Recent photos</h4>
+		<p>{{getFlickrPhotos}}</p>
+	</div>
+
+
+	<div class="row" ></div>
+	<div class="row">
+		<div ></div>
+		<h2 ></h2>
+	</div>
+
+
+</div>
